@@ -1,0 +1,16 @@
+[Unit]
+Description=app Thermo box
+StartLimitBurst=5
+StartLimitIntervalSec=33
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+Restart=always
+RestartSec=5
+ExecStart=/home/pi/project/venvs/termoBox_3_09_202/bin/python /home/pi/project/termoBox/run.py
+StandardInput=tty-force
+User=pi
+
+[Install]
+WantedBy=graphical.target
