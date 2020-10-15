@@ -1,11 +1,11 @@
-# pass_office_thermoBox
-Бюро пропусков для RGB фотографий:
-Функционал:
-0. ДОбовления пользователя в базу
-0. Редактирования пользователя
-0. Фотографирования
-0. Создание модели и базы для тренировки
-0. Отправка данных на удаленный сервер распознования (нужен для проекта ThermoBox, Goodline_faceID, faceId_door)
+# recognition_raspberry
+Программа для Raspberry pi 4 8GB предназначена для открытия двери пользователям которые есть в базе
+Обновления пользователей происходит из программы: https://github.com/morgonxak/pass_office_thermoBox
+
+# Функционал:
+0. ОТкрытия двери от кнопки
+0. Открытия Двери от распознанного лица
+0. Автомотическое обновления классификатора
 
 # Настроки:
 0. распользаются в settings
@@ -20,6 +20,10 @@
 0. Пример формирования: rc/door_server.service
 0. перезапустить systemD: sudo systemctl daemon-reload
 
+# Технологии:
+0. Python 3.7.3
+0. SQLite
+
 ## Установка:
 0. Создать виртуальное окружения python3 -m venv door, активировать source door/bin/activate
 0. pip install -r requirements.txt
@@ -31,7 +35,7 @@
 0. modul - основные компоненты с которыми работает программа
 
 ## Схема взаимодействия модулей
-![alt text](https://github.com/morgonxak/termoBox/blob/9_9_20/app_thermometer/rc/git/Schema.png)
+![alt text](https://github.com/morgonxak/recognition_raspberry/rc/git/Schema.png)
 
 ## Пины для подключения:
 ## Свойство
