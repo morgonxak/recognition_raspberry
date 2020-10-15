@@ -35,7 +35,7 @@
 0. modul - основные компоненты с которыми работает программа
 
 ## Схема взаимодействия модулей
-![alt text](https://github.com/morgonxak/recognition_raspberry/rc/git/Schema.png)
+![alt text](https://github.com/morgonxak/recognition_raspberry/blob/master/rc/git/Scheme.png)
 
 ## Пины для подключения:
 ## Свойство
